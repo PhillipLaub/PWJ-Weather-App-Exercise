@@ -28,6 +28,9 @@ getWeatherData = (city) => {
     .then((resData) => {
       console.log(resData);
       showWeatherData(resData);
+    })
+    .catch((error) => {
+      console.log(error);
     });
 };
 
